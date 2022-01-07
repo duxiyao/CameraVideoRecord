@@ -2,11 +2,19 @@
 
 buildscript {
     repositories {
+        google()
+        mavenCentral() // add repository
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.android.tools.build:gradle:3.6.0'
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -14,6 +22,14 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
+        mavenCentral() // add repository
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         jcenter()
     }
 }
